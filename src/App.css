@@ -1,10 +1,46 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+code {
+font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex {
+    display: flex;
+}
+
+.App {
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.title {
+    flex-direction: row;
+}
+
+.controls {
+    flex-direction: row;
+    width: 320px;
+    justify-content: space-evenly;
+}
+
+.button {
+    padding: 1rem;
+    background-color: #fafafa;
+    border: none;
+    display: flex;
+    width: 120px;
+    justify-content: space-evenly;
+    border-radius: 8px 8px 8px 8px;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,17 +51,46 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
   color: white;
+  height: 90%;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.playlist {
+    flex-direction: column;
+    overflow: scroll;
+    height: 40%;
+}
+
+.song {
+    padding: 7px;
+    border-radius: 3px 3px 3px 3px;
+    list-style: none;
+    text-align: left;
+}
+
+.activeSong {
+    text-decoration: underline;
+}
+
+.song:hover, .button:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+footer {
+    margin-left: 12px;
+    align-items: center;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +101,8 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes downarrow {
+    0% { -webkit-transform: translateY(0); opacity: 1 }
+    100% { -webkit-transform: translateY(12px); opacity: 1 }
+  }

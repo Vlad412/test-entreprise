@@ -1,0 +1,28 @@
+{
+    "songs": [        
+        {
+            "name": "Electric Light Orchestra - Mr blue sky",
+            "path": "songs/elo+mr+blue+sky.mp3"
+        },
+        {
+            "name": "Joe Dassin - Et si tu n'existais pas",
+            "path": "songs/joe+dassin+et+si+tu.mp3"
+        },        
+        {
+            "name": "Anubis - Anubis",
+            "path": "songs/anubis+anubis.mp3"
+        },        
+        {
+            "name": "Gorillaz - Feel good Inc",
+            "path": "songs/feel+good+gorillaz.mp3"
+        },        
+        {
+            "name": "Leb i sol - Cuvam noc od budnih",
+            "path": "songs/leb+i+sol+cuvam+noc+od+budnih.mp3"
+        },
+        {
+            "name": "Une explosion",
+            "path": "songs/explosion.mp3"
+        }
+    ]
+}
